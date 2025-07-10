@@ -11,7 +11,6 @@ import {
 } from "firebase/firestore";
 import { db } from "./firebase";
 
-// إضافة مهمة جديدة للمستخدم
 export const addTask = async (userId, taskData) => {
   try {
     const docRef = await addDoc(collection(db, "tasks"), {
@@ -27,7 +26,6 @@ export const addTask = async (userId, taskData) => {
   }
 };
 
-// تحديث بيانات مهمة معينة
 export const updateTask = async (taskId, updates) => {
   try {
     const taskRef = doc(db, "tasks", taskId);
@@ -40,7 +38,6 @@ export const updateTask = async (taskId, updates) => {
   }
 };
 
-// حذف مهمة
 export const deleteTask = async (taskId) => {
   try {
     const taskRef = doc(db, "tasks", taskId);
@@ -50,7 +47,6 @@ export const deleteTask = async (taskId) => {
   }
 };
 
-// تبديل حالة إكمال المهمة (مكتملة/غير مكتملة)
 export const toggleTaskComplete = async (taskId, completed) => {
   try {
     const taskRef = doc(db, "tasks", taskId);
@@ -63,7 +59,6 @@ export const toggleTaskComplete = async (taskId, completed) => {
   }
 };
 
-// جلب جميع المهام الخاصة بالمستخدم
 export const getTasks = async (userId) => {
   try {
     const tasksRef = collection(db, "tasks");

@@ -61,12 +61,10 @@ function AuthStack() {
   );
 }
 
-// هذا مكون وسيط يعرض الواجهات حسب حالة المصادقة
 function AppRoutes() {
   const { currentUser, loading } = useAuth();
 
   if (loading) {
-    // هنا ممكن تضيف شاشة تحميل بدل null إذا حبيت
     return null;
   }
 

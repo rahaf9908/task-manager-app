@@ -5,7 +5,6 @@ import { updateTask } from '../services/taskService';
 export default function EditTaskScreen({ route, navigation }) {
   const task = route?.params?.task;
 
-  // ✅ إذا لم يتم تمرير المهمة، عرض رسالة وتنقل المستخدم للوراء
   if (!task) {
     return (
       <View style={styles.container}>

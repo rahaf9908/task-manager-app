@@ -1,50 +1,37 @@
-# Welcome to your Expo app 👋
+# Task Manager App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+تطبيق لإدارة المهام يسمح للمستخدمين بالتسجيل وتسجيل الدخول، إضافة وتعديل وحذف المهام الشخصية، وتحديث حالة كل مهمة (مكتملة أو غير مكتملة).
 
-## Get started
+---
 
-1. Install dependencies
+## المميزات
 
-   ```bash
-   npm install
-   ```
+- تسجيل مستخدم جديد وتسجيل الدخول باستخدام Firebase Authentication (البريد الإلكتروني وكلمة المرور).
+- إضافة مهام جديدة (عنوان، وصف، حالة).
+- تعديل وحذف المهام.
+- تحديث حالة المهمة بين مكتملة أو غير مكتملة.
+- عرض المهام الخاصة بالمستخدم فقط.
+- شاشة إحصائيات توضح عدد المهام الكلي وعدد المهام المكتملة.
+- الحفاظ على تسجيل الدخول تلقائيًا عند إعادة فتح التطبيق.
 
-2. Start the app
+---
 
-   ```bash
-   npx expo start
-   ```
+## التقنيات المستخدمة
 
-In the output, you'll find options to open the app in a
+- React Native
+- Firebase Authentication
+- Firestore (قاعدة البيانات)
+- React Navigation
+- Context API لإدارة الحالة
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+---
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## كيفية التشغيل محليًا
 
-## Get a fresh project
-
-When you're ready, run:
+1. استنساخ المشروع:
 
 ```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+git clone https://github.com/rahaf9908/task-manager-app.git
+cd task-manager-app
+تثبيت الحزم:
+npm install
